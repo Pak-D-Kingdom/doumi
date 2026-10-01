@@ -2,14 +2,15 @@
 
 :root{
   --cream:#FFF7EC;
-  --cream-deep:#E8F7FE;
-  --cocoa:#003494;
-  --cocoa-soft:#4A62A0;
-  --pink:#FF5DA8;
-  --pink-deep:#E8438F;
-  --butter:#7ED3F7;
-  --choco:#2FA8DB;
-  --line:rgba(0,52,148,0.12);
+  --cream-deep:#E0F6FF;      
+  --cocoa:#1E2D45;           
+  --cocoa-soft:#5B6A82;     
+  --pink:#FF4FA3;
+  --pink-deep:#E63A8E;       
+  --butter:#00B8FF;          
+  --choco:#00B8FF;           
+  --brown:#7A4E2D;           
+  --line:rgba(30,45,69,0.12);
   --radius:22px;
   --maxw:1180px;
 }
@@ -109,10 +110,11 @@ section{padding:88px 0;}
 .about .eyebrow-mark{color:var(--butter);}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
 .about-copy p{color:rgba(255,245,247,0.82);font-size:1.05rem;margin-bottom:18px;}
-.about-copy .visi{border-left:3px solid var(--pink);padding-left:18px;font-family:'Bricolage Grotesque',sans-serif;font-size:1.15rem;color:var(--cream);}
+.point-list .visi{border-left:3px solid var(--pink);padding-left:18px;font-family:'Bricolage Grotesque',sans-serif;font-size:1.15rem;color:var(--cream);}
 .point-list{display:flex;flex-direction:column;gap:22px;}
 .point{display:flex;gap:16px;align-items:flex-start;}
 .point .num{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1.1rem;color:var(--cocoa);background:var(--butter);width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.point h2{font-size:1.1rem;color:var(--cream);margin-bottom:4px;}
 .point h3{font-size:1.1rem;color:var(--cream);margin-bottom:4px;}
 .point p{color:rgba(255,245,247,0.75);font-size:0.98rem;}
 
@@ -121,6 +123,11 @@ section{padding:88px 0;}
 .menu-card{
   background:#fff;border-radius:var(--radius);padding:26px 24px 24px;
   border:1px solid var(--line);
+}
+.menu-card .donut-wrap img{
+  width:150px;
+  height:100px;
+  object-fit:contain;
 }
 .menu-card .donut-wrap{width:96px;height:96px;margin-bottom:16px;}
 .menu-card h3{font-size:1.15rem;margin-bottom:6px;}
@@ -144,6 +151,16 @@ section{padding:88px 0;}
 .g-item{
   border-radius:16px;position:relative;overflow:hidden;display:flex;align-items:flex-end;
   border:1.5px dashed var(--line);background:var(--cream-deep);
+}
+.g-item img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.g-item .g-tag{
+  z-index:1;
 }
 .g-item .g-tag{
   position:relative;margin:12px;padding:6px 14px;border-radius:999px;background:rgba(0,52,148,0.85);
@@ -178,7 +195,7 @@ section{padding:88px 0;}
 /* TESTIMONI */
 .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
 .testi-card{background:var(--cream-deep);border-radius:var(--radius);padding:28px;}
-.testi-card .stars{color:var(--butter);letter-spacing:2px;margin-bottom:14px;font-size:1.05rem;}
+.testi-card .stars{color:var(--pink);}
 .testi-card p.quote{font-size:1rem;color:var(--cocoa);margin-bottom:18px;}
 .testi-card .who{font-weight:600;font-size:0.92rem;color:var(--cocoa-soft);}
 
@@ -243,10 +260,10 @@ footer{background:var(--cocoa);color:rgba(255,245,247,0.85);padding:64px 0 26px;
 
 /* Palette tweaks: Doumi official pink + sky blue */
 .testi-card .stars{color:var(--pink);}
-.g-item.produk{background:linear-gradient(135deg,#FFE1F0,#FF5DA8);}
-.g-item.customer{background:linear-gradient(135deg,#7ED3F7,#FF5DA8);}
-.g-item.outlet{background:linear-gradient(135deg,#FF5DA8,#E8438F);}
-.g-item.outlet2{background:linear-gradient(135deg,#2FA8DB,#0B3D91);}
+.g-item.produk{background:linear-gradient(135deg,#FFE1F0,#FF4FA3);}
+.g-item.customer{background:linear-gradient(135deg,#00B8FF,#FF4FA3);}
+.g-item.outlet{background:linear-gradient(135deg,#FF4FA3,#E63A8E);}
+.g-item.outlet2{background:linear-gradient(135deg,#00B8FF,#1E2D45);}
 .cta-band{background:var(--choco);}
 .cta-band .btn-outline{border-color:#fff;color:#fff;}
 

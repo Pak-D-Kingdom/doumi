@@ -1,9 +1,7 @@
 import Head from 'next/head';
 import { useState } from 'react';
 
-const WA_ORDER = "https://wa.me/6281234567890?text=Halo%20Doumi%2C%20saya%20mau%20pesan%20donat";
-const WA_PARTNER = "https://wa.me/6281234567890?text=Halo%20Doumi%2C%20saya%20tertarik%20dengan%20kemitraan%20Doumi";
-const WA_PLAIN = "https://wa.me/6281234567890";
+const WA = "https://wa.me/6281234567890?text=Halo%20Doumi%2C%20saya%20mau%20pesan%20donat";
 const IG = "https://www.instagram.com/doumi.official?stkn=MXF2bnhvOWsxanpoZA==";
 const TIKTOK = "https://www.tiktok.com/@doumi.official4?_r=1&_t=ZS-9A9tAESgEbq";
 const FACEBOOK = "https://www.";
@@ -23,7 +21,7 @@ export default function Home() {
       <Head>
         <title>Doumi</title>
         <meta name="description" content="Doumi adalah brand donat lembut dengan topping melimpah dan harga bersahabat. Pesan sekarang atau gabung jadi mitra Doumi." />
-        <link rel="icon" type="image/png" href="/images/logo.png" />
+        <link rel="icon" type="image/png" href="/images/logo_doumi.png" />
       </Head>
 
       {/* NAVBAR */}
@@ -42,7 +40,7 @@ export default function Home() {
             <a href="#contact" onClick={closeNav}>Contact</a>
           </nav>
           <div className="nav-cta" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-            <a className="btn btn-primary" href={WA_ORDER} target="_blank" rel="noopener noreferrer">
+            <a className="btn btn-primary" href={WA} target="_blank" rel="noopener noreferrer">
               <span>Pesan Sekarang</span>
             </a>
             <button className="nav-toggle" onClick={() => setNavOpen(!navOpen)} aria-label="Buka menu">☰</button>
@@ -58,14 +56,14 @@ export default function Home() {
             <h1>Digigit sekali,<br />langsung jatuh cinta.</h1>
             <p className="lede">Doumi bikin donat lembut dengan topping melimpah, dari coklat klasik sampai rasa kekinian cocok buat ngemil harian, arisan, sampai hampers momen spesial.</p>
             <div className="cta-row">
-              <a className="btn btn-primary" href={WA_ORDER} target="_blank" rel="noopener noreferrer">Pesan Sekarang</a>
+              <a className="btn btn-primary" href={WA} target="_blank" rel="noopener noreferrer">Pesan Sekarang</a>
               <a className="btn btn-outline" href="#menu">Lihat Menu</a>
             </div>
           </div>
           <div className="hero-art">
           <div className="hero-art">
               <div className="halo"></div>
-              <img src="/images/logo.png" alt="Doumi" className="hero-logo" />
+              <img src="/images/logo_doumi.png" alt="Doumi" className="hero-logo" />
             </div>
           </div>
         </div>
@@ -73,7 +71,7 @@ export default function Home() {
 
       <div className="divider">
         <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
-          <path d="M0,30 C240,60 480,0 720,20 C960,40 1200,55 1440,25 L1440,60 L0,60 Z" fill="#003494"></path>
+          <path d="M0,30 C240,60 480,0 720,20 C960,40 1200,55 1440,25 L1440,60 L0,60 Z" fill="#1E2D45"></path>
         </svg>
       </div>
 
@@ -83,13 +81,16 @@ export default function Home() {
           <div className="about-copy">
             <div className="eyebrow-mark"><span className="dot"></span> Tentang Kami</div>
             <h2 style={{ color: 'var(--cream)', fontSize: 'clamp(1.9rem,3.2vw,2.6rem)', marginBottom: 20 }}>Cerita di balik Doumi</h2>
-            <p>Doumi lahir dari resep rumahan yang disempurnakan: adonan diistirahatkan lebih lama supaya teksturnya empuk dan tidak bantat, lalu dilapisi glasir dan topping yang murah hati — bukan sekadar taburan tipis.</p>
-            <p className="visi">Visi kami: menjadikan donat lembut berkualitas sebagai camilan favorit yang bisa dinikmati semua kalangan, kapan saja.</p>
+            <p>Doumi (Donut & Milk) adalah brand kuliner yang menghadirkan perpaduan donat dan minuman berbasis susu dalam satu konsep yang praktis, modern, dan mudah dinikmati. Doumi menghadirkan beragam pilihan donat dan minuman sehingga pelanggan dapat menikmati perpaduan camilan manis dan minuman dalam satu pilihan. Produk Doumi dirancang untuk menemani berbagai momen, mulai dari camilan sehari-hari hingga waktu berkumpul bersama keluarga, teman, maupun rekan. 
+              Dengan mengutamakan produk yang menarik, cita rasa yang konsisten, serta konsep brand yang mudah dikenali, Doumi hadir untuk memberikan pengalaman menikmati donat dan milk yang menyenangkan sekaligus membuka peluang usaha bagi para mitra.</p>
           </div>
           <div className="point-list">
-            <div className="point"><div className="num">1</div><div><h3>Lembut & Fresh</h3><p>Dibuat dan diolah setiap hari, tanpa bahan pengawet.</p></div></div>
-            <div className="point"><div className="num">2</div><div><h3>Topping Melimpah</h3><p>Tidak pelit topping — setiap gigitan kerasa penuh rasa.</p></div></div>
-            <div className="point"><div className="num">3</div><div><h3>Harga Bersahabat</h3><p>Kualitas premium dengan harga yang tetap ramah di kantong.</p></div></div>
+            <p className="visi">Visi kami: Menjadi brand Donut & Milk pilihan masyarakat yang terus berkembang dan tumbuh bersama mitra.</p>
+            <div className="point"><h2>Misi :</h2></div>
+            <div className="point"><div className="num">1</div><div><h3>Menghadirkan produk berkualitas dengan cita rasa yang konsisten.</h3></div></div>
+            <div className="point"><div className="num">2</div><div><h3>Mengembangkan produk yang inovatif dan menarik.</h3></div></div>
+            <div className="point"><div className="num">3</div><div><h3>Memberikan pengalaman terbaik bagi pelanggan Membangun sistem kemitraan yang terstruktur dan berkelanjutan.</h3></div></div>
+            <div className="point"><div className="num">4</div><div><h3>Memperluas jangkauan Doumi melalui pertumbuhan bersama mitra </h3></div></div>
           </div>
         </div>
       </section>
@@ -106,7 +107,7 @@ export default function Home() {
 
             <div className="menu-card">
               <div className="donut-wrap">
-                <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="#F3D9B8" /><path d="M6,46 C6,24 26,6 50,6 C74,6 94,24 94,46 C94,54 90,62 84,68 C78,63 70,61 62,64 C55,67 48,67 41,64 C33,61 25,63 18,68 C11,62 6,55 6,46 Z" fill="#4A2E22" /><circle cx="50" cy="50" r="19" fill="#fff" /><rect x="30" y="18" width="9" height="3.4" rx="1.7" fill="#fff" transform="rotate(15 34 19)" /><rect x="62" y="16" width="9" height="3.4" rx="1.7" fill="#fff" transform="rotate(25 66 18)" /><rect x="46" y="12" width="9" height="3" rx="1.5" fill="#fff" transform="rotate(-8 50 13)" /></svg>
+                <img src="/images/coklat-klasik.png" alt="Donat Coklat" />
               </div>
               <h3>Classic Chocolate</h3>
               <p className="desc">Classic Series — donat original dengan lapisan chocolate glaze.</p>
@@ -115,8 +116,8 @@ export default function Home() {
 
             <div className="menu-card">
               <div className="donut-wrap">
-                <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="#F3D9B8" /><path d="M6,46 C6,24 26,6 50,6 C74,6 94,24 94,46 C94,54 90,62 84,68 C78,63 70,61 62,64 C55,67 48,67 41,64 C33,61 25,63 18,68 C11,62 6,55 6,46 Z" fill="#B99BE0" /><circle cx="50" cy="50" r="19" fill="#fff" /><rect x="36" y="16" width="8" height="8" rx="1.5" fill="#fff" transform="rotate(10 40 20)" /><rect x="52" y="12" width="8" height="8" rx="1.5" fill="#fff" transform="rotate(-12 56 16)" /></svg>
-              </div>
+                  <img src="/images/taro.png" alt="Donat Taro" />
+                </div>
               <h3>Taro Milky Cloud</h3>
               <p className="desc">Sweet Series (Bomboloni) — taro glaze, milky filling, marshmallow.</p>
               <div className="price-row"><span className="price">Rp 5.000</span><span style={{ fontSize: '0.85rem', color: 'var(--cocoa-soft)' }}>/ pcs</span></div>
@@ -124,25 +125,25 @@ export default function Home() {
 
             <div className="menu-card">
               <div className="donut-wrap">
-                <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="#F3D9B8" /><path d="M6,46 C6,24 26,6 50,6 C74,6 94,24 94,46 C94,54 90,62 84,68 C78,63 70,61 62,64 C55,67 48,67 41,64 C33,61 25,63 18,68 C11,62 6,55 6,46 Z" fill="#FF5DA8" /><circle cx="50" cy="50" r="19" fill="#fff" /></svg>
-              </div>
+                  <img src="/images/mayo.png" alt="Donat Mayo" />
+                </div>
               <h3>Strawberry Milky</h3>
-              <p className="desc">Sweet Series (Bomboloni) — strawberry glaze dengan milky filling lembut.</p>
+              <p className="desc">Savory Series — Mayo glaze dengan taburan abon topping.</p>
               <div className="price-row"><span className="price">Rp 5.000</span><span style={{ fontSize: '0.85rem', color: 'var(--cocoa-soft)' }}>/ pcs</span></div>
             </div>
 
             <div className="menu-card">
               <div className="donut-wrap">
-                <svg viewBox="0 0 100 100"><path d="M28,30 L72,30 L66,92 Q50,98 34,92 Z" fill="#6B4636" /><ellipse cx="50" cy="30" rx="22" ry="7" fill="#E9C9A5" /><rect x="46" y="6" width="5" height="26" rx="2.5" fill="#fff" /></svg>
+                <img src="/images/pinnapple-honeytea.png" alt="Pannaple Honey Tea" />
               </div>
-              <h3>Kopi Susu Jajudu</h3>
-              <p className="desc">Coffee Series — racikan kopi susu gula aren, house favorite.</p>
-              <div className="price-row"><span className="price">Rp 10.000</span><span style={{ fontSize: '0.85rem', color: 'var(--cocoa-soft)' }}>/ cup</span></div>
+              <h3>Pinnapple Honey Tea</h3>
+              <p className="desc">Tea Series — perpaduan segarnya nanas dan manisnya madu dalam secangkir teh</p>
+              <div className="price-row"><span className="price">Rp 8.000</span><span style={{ fontSize: '0.85rem', color: 'var(--cocoa-soft)' }}>/ cup</span></div>
             </div>
 
             <div className="menu-card">
               <div className="donut-wrap">
-                <svg viewBox="0 0 100 100"><path d="M28,30 L72,30 L66,92 Q50,98 34,92 Z" fill="#6C9A5C" /><ellipse cx="50" cy="30" rx="22" ry="7" fill="#F3E9D6" /><rect x="46" y="6" width="5" height="26" rx="2.5" fill="#fff" /></svg>
+                <img src="/images/matcha-latte.png" alt="Matcha Latte" />
               </div>
               <h3>Matcha Latte</h3>
               <p className="desc">Matcha Series — matcha premium dipadukan susu creamy.</p>
@@ -151,13 +152,12 @@ export default function Home() {
 
             <div className="menu-card">
               <div className="donut-wrap">
-                <svg viewBox="0 0 100 100"><path d="M28,30 L72,30 L66,92 Q50,98 34,92 Z" fill="#7A4B32" /><ellipse cx="50" cy="30" rx="22" ry="7" fill="#F2A5C0" /><rect x="46" y="6" width="5" height="26" rx="2.5" fill="#fff" /></svg>
+                <img src="/images/mocha-choco.png" alt="Mocho Choco" />
               </div>
-              <h3>Choco Berry</h3>
-              <p className="desc">Choco Series — perpaduan choco creamy dengan sentuhan berry.</p>
+              <h3>Mocha Choco</h3>
+              <p className="desc">Choco Series — perpaduan mochacino dengan choco creamy.</p>
               <div className="price-row"><span className="price">Rp 12.000</span><span style={{ fontSize: '0.85rem', color: 'var(--cocoa-soft)' }}>/ cup</span></div>
             </div>
-
           </div>
 
           <div className="promo-strip">
@@ -175,12 +175,12 @@ export default function Home() {
               <h2 style={{ fontSize: '1.6rem' }}>Semua varian & harga terbaru</h2>
             </div>
             <div className="catalog-grid">
-              <button type="button" className="catalog-card" onClick={() => openLightbox('/images/menu-donat.jpg', 'Menu lengkap donat Doumi')}>
-                <img src="/images/menu-donat.jpg" alt="Menu lengkap donat Doumi" />
+              <button type="button" className="catalog-card" onClick={() => openLightbox('/images/menu-donat.png', 'Menu lengkap donat Doumi')}>
+                <img src="/images/menu-donat.png" alt="Menu lengkap donat Doumi" />
                 <div className="cap"><h3>Menu Donat</h3><span>Lihat penuh ↗</span></div>
               </button>
-              <button type="button" className="catalog-card" onClick={() => openLightbox('/images/menu-minuman.jpg', 'Menu lengkap minuman Doumi')}>
-                <img src="/images/menu-minuman.jpg" alt="Menu lengkap minuman Doumi" />
+              <button type="button" className="catalog-card" onClick={() => openLightbox('/images/menu-minuman.png', 'Menu lengkap minuman Doumi')}>
+                <img src="/images/menu-minuman.png" alt="Menu lengkap minuman Doumi" />
                 <div className="cap"><h3>Menu Minuman</h3><span>Lihat penuh ↗</span></div>
               </button>
             </div>
@@ -240,13 +240,16 @@ export default function Home() {
           <div className="section-head">
             <div className="eyebrow-mark"><span className="dot"></span> Galeri</div>
             <h2>Doumi dalam gambar</h2>
-            <p>Kotak bertanda di bawah ini adalah placeholder — tinggal ganti dengan foto asli produk, booth, dan momen pelanggan Doumi.</p>
+            <p>Kotak bertanda di bawah ini adalah placeholder — tinggal ganti dengan foto asli produk, outlet, dan momen pelanggan Doumi.</p>
           </div>
           <div className="gallery-grid">
             <div className="g-item produk big"><span className="g-tag">Foto Produk</span></div>
             <div className="g-item produk"><span className="g-tag">Foto Produk</span></div>
-            <div className="g-item outlet"><span className="g-tag">Booth / Outlet</span></div>
-            <div className="g-item outlet2"><span className="g-tag">Booth / Outlet</span></div>
+            <div className="g-item outlet">
+              <img src="/images/outlet-container.jpeg" alt="Container outlet Doumi" />
+              <span className="g-tag">Container / Outlet</span>
+            </div>
+            <div className="g-item outlet2"><span className="g-tag">Ruko / Outlet</span></div>
             <div className="g-item customer"><span className="g-tag">Customer Moment</span></div>
             <div className="g-item customer"><span className="g-tag">Customer Moment</span></div>
           </div>
@@ -270,7 +273,7 @@ export default function Home() {
           <div className="partner-card">
             <h3>Tertarik jadi mitra?</h3>
             <p>Ceritakan kotamu dan rencana usahamu, tim Doumi akan bantu hitungkan paket kemitraan yang paling pas.</p>
-            <a className="btn btn-primary" href={WA_PARTNER} target="_blank" rel="noopener noreferrer">Tanya Kemitraan</a>
+            <a className="btn btn-primary" href={WA} target="_blank" rel="noopener noreferrer">Tanya Kemitraan</a>
           </div>
         </div>
       </section>
@@ -285,12 +288,12 @@ export default function Home() {
           </div>
           <div className="outlet-grid">
             <div className="outlet-card">
-              <iframe src="https://www.google.com/maps?q=Surabaya&output=embed" loading="lazy"></iframe>
-              <div className="info"><h3>Doumi Surabaya Pusat</h3><p>Jl. Contoh Raya No. 10, Surabaya, Jawa Timur</p></div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.536720523086!2d112.716964726544!3d-7.30830547461492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb7f8b02a0cd%3A0x1e03a560196c1667!2sJl.%20Karah%20No.116%2C%20Karah%2C%20Kec.%20Jambangan%2C%20Surabaya%2C%20Jawa%20Timur%2060232!5e0!3m2!1sid!2sid!4v1790842135924!5m2!1sid!2sidc" loading="lazy" allowFullScreen referrerPolicy="no-referrer-when-downgrade" title="Peta Outlet Doumi"></iframe>
+              <div className="info"><h3>Doumi Surabaya Selatan</h3><p>Jl. Karah No.116, Surabaya, Jawa Timur</p></div>
             </div>
             <div className="outlet-card">
-              <iframe src="https://www.google.com/maps?q=Sidoarjo&output=embed" loading="lazy"></iframe>
-              <div className="info"><h3>Doumi Sidoarjo</h3><p>Jl. Contoh Indah No. 22, Sidoarjo, Jawa Timur</p></div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.4060317608137!2d112.72224272357198!3d-7.308199021848865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb787814409f%3A0xc3be34873078acb!2sJl.%20Ketintang%20No.16%2C%20Wonokromo%2C%20Kec.%20Gayungan%2C%20Surabaya%2C%20Jawa%20Timur%2060231!5e0!3m2!1sid!2sid!4v1790842477946!5m2!1sid!2sid" loading="lazy"></iframe>
+              <div className="info"><h3>Doumi Ketintang</h3><p>Jl. Ketintang No.16, Ketintang, Gayungan, Sidoarjo, Jawa Timur</p></div>
             </div>
             <div className="outlet-card">
               <iframe src="https://www.google.com/maps?q=Gresik&output=embed" loading="lazy"></iframe>
@@ -333,7 +336,7 @@ export default function Home() {
         <div className="wrap">
           <h2>Sudah siap menikmati Doumi?</h2>
           <div className="cta-row">
-            <a className="btn btn-light" href={WA_ORDER} target="_blank" rel="noopener noreferrer">Pesan via WhatsApp</a>
+            <a className="btn btn-light" href={WA} target="_blank" rel="noopener noreferrer">Pesan via WhatsApp</a>
             <a className="btn btn-outline" style={{ borderColor: '#fff', color: '#fff' }} href={IG} target="_blank" rel="noopener noreferrer">Follow Instagram</a>
           </div>
         </div>
@@ -344,7 +347,7 @@ export default function Home() {
         <div className="wrap">
           <div className="footer-grid">
             <div>
-              <a href="#home" className="logo"><img src="/images/logo.png" alt="Doumi" /></a>
+              <a href="#home" className="logo"><img src="/images/logo_doumi.png" alt="Doumi" /></a>
               <p className="tag">Donat lembut, topping melimpah, harga bersahabat, dibuat fresh setiap hari.</p>
             </div>
             <div>
@@ -360,7 +363,7 @@ export default function Home() {
             <div>
               <h4>Sosial Media</h4>
               <ul>
-                <li><a href={WA_PLAIN} target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                <li><a href={WA} target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
                 <li><a href={IG} target="_blank" rel="noopener noreferrer">Instagram</a></li>
                 <li><a href={THREADS} target="_blank" rel="noopener noreferrer">Threads</a></li>
                 <li><a href={TIKTOK} target="_blank" rel="noopener noreferrer">TikTok</a></li>
@@ -380,7 +383,7 @@ export default function Home() {
         </div>
       </footer>
 
-      <a className="wa-float" href={WA_ORDER} target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp Doumi">
+      <a className="wa-float" href={WA} target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp Doumi">
         <svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.6-1.28 1.18-1.76 1.2-.45.03-.9.2-3.03-.63-2.56-1.02-4.2-3.63-4.33-3.8-.13-.17-1.04-1.38-1.04-2.64s.66-1.87.9-2.13c.23-.25.5-.31.67-.31.17 0 .34 0 .48.01.16.01.36-.06.56.43.22.53.73 1.83.8 1.96.06.13.1.28.02.45-.08.17-.13.28-.25.43-.13.15-.27.34-.39.46-.13.13-.26.27-.11.53.15.26.66 1.09 1.42 1.77.98.87 1.8 1.14 2.06 1.27.26.13.42.11.57-.07.16-.18.66-.77.83-1.03.17-.26.34-.22.57-.13.23.09 1.47.69 1.72.82.25.13.42.19.48.3.06.11.06.62-.16 1.22z" /></svg>
       </a>
     </>
