@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useState } from 'react';
 
-const WA = "https://wa.me/6281234567890?text=Halo%20Doumi%2C%20saya%20mau%20pesan%20donat";
+const WA = "https://wa.me/085122414249";
 const IG = "https://www.instagram.com/doumi.official?stkn=MXF2bnhvOWsxanpoZA==";
 const TIKTOK = "https://www.tiktok.com/@doumi.official4?_r=1&_t=ZS-9A9tAESgEbq";
 const FACEBOOK = "https://www.";
@@ -52,9 +52,8 @@ export default function Home() {
       <section className="hero" id="home">
         <div className="wrap">
           <div className="hero-copy">
-            <div className="eyebrow-mark"><span className="dot"></span> Donat rumahan, dipanggang & digoreng fresh tiap hari</div>
-            <h1>Digigit sekali,<br />langsung jatuh cinta.</h1>
-            <p className="lede">Doumi bikin donat lembut dengan topping melimpah, dari coklat klasik sampai rasa kekinian cocok buat ngemil harian, arisan, sampai hampers momen spesial.</p>
+            <h1>Donut & Milk for Every Moment</h1>
+            <p className="lede">Lembutnya donat, segarnya minuman pilihan. Doumi hadir untuk setiap jeda kecil yang layak dinikmati. Satu gigitan, satu tegukan, <b>Doumi</b></p>
             <div className="cta-row">
               <a className="btn btn-primary" href={WA} target="_blank" rel="noopener noreferrer">Pesan Sekarang</a>
               <a className="btn btn-outline" href="#menu">Lihat Menu</a>
@@ -100,8 +99,8 @@ export default function Home() {
         <div className="wrap">
           <div className="section-head">
             <div className="eyebrow-mark"><span className="dot"></span> Menu Doumi Donut & Milk</div>
-            <h2>More Donuts, More Happiness</h2>
-            <p>Donat lezat dan minuman favorit dalam satu rasa bahagia. Ini beberapa item andalan dari tiap kategori — menu lengkap & harga terbaru ada di bagian bawah.</p>
+            <h2>Donut & Milk for Every Moment</h2>
+            <p>Donat lezat dan minuman favorit dalam satu rasa bahagia. Ini beberapa item andalan dari tiap kategori - menu lengkap & harga terbaru ada di bagian bawah.</p>
           </div>
           <div className="menu-grid">
 
@@ -110,7 +109,7 @@ export default function Home() {
                 <img src="/images/coklat-klasik.png" alt="Donat Coklat" />
               </div>
               <h3>Classic Chocolate</h3>
-              <p className="desc">Classic Series — donat original dengan lapisan chocolate glaze.</p>
+              <p className="desc">Classic Series - donat original dengan lapisan chocolate glaze.</p>
               <div className="price-row"><span className="price">Rp 4.000</span><span style={{ fontSize: '0.85rem', color: 'var(--cocoa-soft)' }}>/ pcs</span></div>
             </div>
 
@@ -119,7 +118,7 @@ export default function Home() {
                   <img src="/images/taro.png" alt="Donat Taro" />
                 </div>
               <h3>Taro Milky Cloud</h3>
-              <p className="desc">Sweet Series (Bomboloni) — taro glaze, milky filling, marshmallow.</p>
+              <p className="desc">Sweet Series (Bomboloni) - taro glaze, milky filling, marshmallow.</p>
               <div className="price-row"><span className="price">Rp 5.000</span><span style={{ fontSize: '0.85rem', color: 'var(--cocoa-soft)' }}>/ pcs</span></div>
             </div>
 
@@ -127,8 +126,8 @@ export default function Home() {
               <div className="donut-wrap">
                   <img src="/images/mayo.png" alt="Donat Mayo" />
                 </div>
-              <h3>Strawberry Milky</h3>
-              <p className="desc">Savory Series — Mayo glaze dengan taburan abon topping.</p>
+              <h3>Mayo Floss Delight</h3>
+              <p className="desc">Savory Series - Mayo glaze dengan taburan abon topping.</p>
               <div className="price-row"><span className="price">Rp 5.000</span><span style={{ fontSize: '0.85rem', color: 'var(--cocoa-soft)' }}>/ pcs</span></div>
             </div>
 
@@ -137,7 +136,7 @@ export default function Home() {
                 <img src="/images/pinnapple-honeytea.png" alt="Pannaple Honey Tea" />
               </div>
               <h3>Pinnapple Honey Tea</h3>
-              <p className="desc">Tea Series — perpaduan segarnya nanas dan manisnya madu dalam secangkir teh</p>
+              <p className="desc">Tea Series - perpaduan segarnya nanas dan manisnya madu dalam secangkir teh</p>
               <div className="price-row"><span className="price">Rp 8.000</span><span style={{ fontSize: '0.85rem', color: 'var(--cocoa-soft)' }}>/ cup</span></div>
             </div>
 
@@ -146,7 +145,7 @@ export default function Home() {
                 <img src="/images/matcha-latte.png" alt="Matcha Latte" />
               </div>
               <h3>Matcha Latte</h3>
-              <p className="desc">Matcha Series — matcha premium dipadukan susu creamy.</p>
+              <p className="desc">Matcha Series - matcha premium dipadukan susu creamy.</p>
               <div className="price-row"><span className="price">Rp 12.000</span><span style={{ fontSize: '0.85rem', color: 'var(--cocoa-soft)' }}>/ cup</span></div>
             </div>
 
@@ -155,13 +154,13 @@ export default function Home() {
                 <img src="/images/mocha-choco.png" alt="Mocho Choco" />
               </div>
               <h3>Mocha Choco</h3>
-              <p className="desc">Choco Series — perpaduan mochacino dengan choco creamy.</p>
+              <p className="desc">Choco Series - perpaduan mochacino dengan choco creamy.</p>
               <div className="price-row"><span className="price">Rp 12.000</span><span style={{ fontSize: '0.85rem', color: 'var(--cocoa-soft)' }}>/ cup</span></div>
             </div>
           </div>
 
           <div className="promo-strip">
-            <div className="ptxt">🔥 <b>Promo Ceban</b> — kopi susu jadul / original milk + donat, cuma Rp10.000</div>
+            <div className="ptxt">🔥 <b>Promo Ceban</b> - kopi susu jadul / original milk + donat, cuma Rp10.000</div>
             <div className="pitems"><span>Terbatas 50 porsi/hari</span><span>Iced & Hot</span></div>
           </div>
 
@@ -172,7 +171,7 @@ export default function Home() {
           <div className="menu-catalog" id="menu-lengkap">
             <div className="section-head" style={{ marginBottom: 28 }}>
               <div className="eyebrow-mark"><span className="dot"></span> Menu Lengkap</div>
-              <h2 style={{ fontSize: '1.6rem' }}>Semua varian & harga terbaru</h2>
+              <h2 style={{ fontSize: '1.6rem' }}>Semua varian</h2>
             </div>
             <div className="catalog-grid">
               <button type="button" className="catalog-card" onClick={() => openLightbox('/images/menu-donat.png', 'Menu lengkap donat Doumi')}>
@@ -201,34 +200,39 @@ export default function Home() {
       <section className="keunggulan" id="keunggulan">
         <div className="wrap">
           <div className="section-head">
-            <div className="eyebrow-mark"><span className="dot"></span> Kenapa Doumi</div>
-            <h2>Lima alasan orang balik lagi</h2>
+            <div className="eyebrow-mark"><span className="dot"></span> Kenapa Harus Doumi</div>
+            <h2>Bukan Sekadar Donat, tetapi Peluang Usaha yang Menjanjikan</h2>
           </div>
           <div className="adv-grid">
             <div className="adv-card">
+              <svg className="icon" viewBox="0 0 34 34"><circle cx="17" cy="17" r="15" fill="var(--cocoa)" /><circle cx="17" cy="17" r="6" fill="var(--cream)" /></svg>
+              <h3>Produk Familiar</h3>
+              <p>Donat merupakan produk yang mudah diterima oleh berbagai kalangan.</p>
+            </div>
+            <div className="adv-card">
               <svg className="icon" viewBox="0 0 34 34"><circle cx="17" cy="17" r="15" fill="var(--pink)" /><circle cx="17" cy="17" r="6" fill="var(--cream)" /></svg>
-              <h3>Donat Lembut</h3>
-              <p>Tekstur empuk merata sampai gigitan terakhir.</p>
+              <h3>Fleksibel dalam Penempatan</h3>
+              <p>Konsep booth dapat ditempatkan di area dengan potensi traffic yang sesuai.</p>
+            </div>
+            <div className="adv-card">
+              <svg className="icon" viewBox="0 0 34 34"><circle cx="17" cy="17" r="15" fill="var(--pink)" /><circle cx="17" cy="17" r="6" fill="var(--cream)" /></svg>
+              <h3>Modal Dapat Disesuaikan</h3>
+              <p>Tersedia beberapa pilihan paket kemitraan sesuai kebutuhan dan skala usaha.</p>
             </div>
             <div className="adv-card">
               <svg className="icon" viewBox="0 0 34 34"><circle cx="17" cy="17" r="15" fill="var(--butter)" /><circle cx="17" cy="17" r="6" fill="var(--cream)" /></svg>
-              <h3>Topping Beragam</h3>
-              <p>Belasan varian rasa, dari klasik sampai kekinian.</p>
+              <h3>Sistem Operasional Terstruktur</h3>
+              <p>Mitra mendapatkan panduan terkait operasional dan standar usaha.</p>
             </div>
             <div className="adv-card">
               <svg className="icon" viewBox="0 0 34 34"><circle cx="17" cy="17" r="15" fill="var(--choco)" /><circle cx="17" cy="17" r="6" fill="var(--cream)" /></svg>
-              <h3>Harga Terjangkau</h3>
-              <p>Dari Rp 7.000-an, cocok buat jajan tiap hari.</p>
+              <h3>Dukungan Branding & Promosi</h3>
+              <p>Mitra mendapatkan materi branding dan promosi yang mendukung penjualan.</p>
             </div>
             <div className="adv-card">
               <svg className="icon" viewBox="0 0 34 34"><circle cx="17" cy="17" r="15" fill="var(--pink-deep)" /><circle cx="17" cy="17" r="6" fill="var(--cream)" /></svg>
-              <h3>Cocok Berbagai Momen</h3>
-              <p>Snack harian, arisan, hampers, sampai acara kantor.</p>
-            </div>
-            <div className="adv-card">
-              <svg className="icon" viewBox="0 0 34 34"><circle cx="17" cy="17" r="15" fill="var(--cocoa)" /><circle cx="17" cy="17" r="6" fill="var(--cream)" /></svg>
-              <h3>Peluang Kemitraan</h3>
-              <p>Buka usaha donat sendiri dengan dukungan penuh dari Doumi.</p>
+              <h3>Pendampingan Kemitraan</h3>
+              <p>Doumi membantu mitra dalam proses persiapan hingga operasional usaha.</p>
             </div>
           </div>
         </div>
@@ -239,17 +243,16 @@ export default function Home() {
         <div className="wrap">
           <div className="section-head">
             <div className="eyebrow-mark"><span className="dot"></span> Galeri</div>
-            <h2>Doumi dalam gambar</h2>
-            <p>Kotak bertanda di bawah ini adalah placeholder — tinggal ganti dengan foto asli produk, outlet, dan momen pelanggan Doumi.</p>
+            <h2>Setiap sudut punya cerita, setiap momen punya rasa.</h2>
+            <p>Intip berbagai produk, outlet, dan momen seru bersama Doumi yang bikin setiap kunjungan jadi lebih berkesan.</p>
           </div>
           <div className="gallery-grid">
             <div className="g-item produk big"><span className="g-tag">Foto Produk</span></div>
             <div className="g-item produk"><span className="g-tag">Foto Produk</span></div>
             <div className="g-item outlet">
-              <img src="/images/outlet-container.jpeg" alt="Container outlet Doumi" />
+              <img src="/images/Outlet.png" alt="Container outlet Doumi" />
               <span className="g-tag">Container / Outlet</span>
             </div>
-            <div className="g-item outlet2"><span className="g-tag">Ruko / Outlet</span></div>
             <div className="g-item customer"><span className="g-tag">Customer Moment</span></div>
             <div className="g-item customer"><span className="g-tag">Customer Moment</span></div>
           </div>
@@ -258,21 +261,142 @@ export default function Home() {
 
       {/* KEMITRAAN */}
       <section className="partner" id="kemitraan">
-        <div className="wrap partner-inner">
-          <div>
+        <div className="wrap">
+          <div className="section-head">
             <div className="eyebrow-mark"><span className="dot"></span> Kemitraan</div>
-            <h2>Buka usaha Doumi di kotamu</h2>
-            <p>Doumi membuka peluang kemitraan untuk kamu yang ingin punya usaha donat sendiri, lengkap dengan resep, supply bahan, dan pendampingan operasional.</p>
-            <ul className="partner-list">
-              <li>Modal kemitraan terjangkau, cocok untuk pemula</li>
-              <li>Pelatihan produksi & pelayanan sebelum buka</li>
-              <li>Supply bahan baku dan topping terjamin kualitasnya</li>
-              <li>Pendampingan promosi di tahap awal buka outlet</li>
-            </ul>
+            <h2 style={{ color: 'var(--cream)' }}>Buka Usaha Doumi di Kotamu</h2>
+            <p style={{ color: 'rgba(255,245,247,0.82)' }}>Pilih paket kemitraan yang paling sesuai dengan kebutuhan dan gaya usahamu - mulai dari yang kamu kelola sendiri sampai yang sepenuhnya dikelola tim Doumi.</p>
           </div>
-          <div className="partner-card">
-            <h3>Tertarik jadi mitra?</h3>
-            <p>Ceritakan kotamu dan rencana usahamu, tim Doumi akan bantu hitungkan paket kemitraan yang paling pas.</p>
+
+          {/* PAKET KEMITRAAN */}
+          <div className="package-grid">
+            <div className="package-card featured">
+              <span className="package-tag">Doumi Reguler</span>
+              <div className="package-price">Mulai <b>Rp 69 Juta</b></div>
+              <p className="package-desc">Mitra yang ingin mengelola operasional usaha secara mandiri.</p>
+              <table className="package-table">
+                <thead><tr><th>Pilihan Outlet</th><th>Investasi</th></tr></thead>
+                <tbody>
+                  <tr><td>Container</td><td>Rp 69.000.000</td></tr>
+                  <tr><td>Building</td><td>Rp 89.000.000</td></tr>
+                </tbody>
+              </table>
+              <p className="package-sub">Mitra mendapatkan:</p>
+              <ul className="package-list">
+                <li>Booth Doumi</li>
+                <li>Branding booth</li>
+                <li>Peralatan usaha</li>
+                <li>Starter produk</li>
+                <li>Packaging</li>
+                <li>SOP operasional</li>
+                <li>Training karyawan</li>
+                <li>Free marketing kit</li>
+                <li>Supply bahan baku, apron & topi</li>
+              </ul>
+            </div>
+
+            <div className="package-card featured">
+              <span className="package-tag">Doumi Reguler Private</span>
+              <div className="package-price">Mulai <b>Rp 69 Juta</b></div>
+              <p className="package-desc">Mitra yang menginginkan paket usaha branding sendiri dan siap operasional.</p>
+              <table className="package-table">
+                <thead><tr><th>Pilihan Outlet</th><th>Investasi</th></tr></thead>
+                <tbody>
+                  <tr><td>Container</td><td>Rp 69.000.000</td></tr>
+                  <tr><td>Building</td><td>Rp 89.000.000</td></tr>
+                </tbody>
+              </table>
+              <p className="package-sub">Mitra mendapatkan:</p>
+              <ul className="package-list">
+                <li>Booth</li>
+                <li>Branding lengkap</li>
+                <li>Peralatan usaha</li>
+                <li>Starter produk</li>
+                <li>Packaging</li>
+                <li>SOP operasional</li>
+                <li>Training karyawan</li>
+                <li>Free marketing kit</li>
+                <li>Pendampingan operasional</li>
+                <li>Supply bahan baku</li>
+                <li>Brand baru sesuai keinginan mitra</li>
+                <li>Free logo & desain booth</li>
+                <li>Apron & topi</li>
+              </ul>
+            </div>
+
+            <div className="package-card featured">
+              <span className="package-tag">Doumi Autopilot</span>
+              <div className="package-price">Mulai <b>Rp 79 Juta</b></div>
+              <p className="package-desc">Mitra yang ingin memiliki usaha tanpa terlibat langsung dalam operasional harian.</p>
+              <table className="package-table">
+                <thead><tr><th>Pilihan Outlet</th><th>Investasi</th></tr></thead>
+                <tbody>
+                  <tr><td>Container</td><td>Rp 79.000.000</td></tr>
+                  <tr><td>Building</td><td>Rp 99.000.000</td></tr>
+                </tbody>
+              </table>
+              <p className="package-sub">Mitra mendapatkan:</p>
+              <ul className="package-list">
+                <li>Persiapan outlet</li>
+                <li>Rekrutmen & penyediaan operator</li>
+                <li>Training karyawan</li>
+                <li>Operasional harian</li>
+                <li>Pengadaan produk</li>
+                <li>Kontrol operasional</li>
+                <li>Monitoring penjualan</li>
+                <li>Laporan penjualan</li>
+                <li>Evaluasi outlet</li>
+                <li>Apron & topi</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* PILIHAN OUTLET */}
+          <div className="outlet-type-head">
+            <h3>Pilihan Outlet Doumi</h3>
+            <p>Setiap mitra bebas memilih konsep outlet Doumi sesuai kebutuhan, karakteristik lokasi, dan skala usaha yang diinginkan.</p>
+          </div>
+          <div className="outlet-type-grid">
+            <div className="outlet-type-card">
+              <span className="otn">1</span>
+              <h4>Container</h4>
+              <p>Konsep outlet dengan tampilan modern dan ruang operasional lebih luas, cocok untuk lokasi yang membutuhkan area usaha lebih besar.</p>
+            </div>
+            <div className="outlet-type-card">
+              <span className="otn">2</span>
+              <h4>Building</h4>
+              <p>Konsep outlet berupa bangunan kecil dengan ruang lebih lengkap dan permanen untuk mendukung aktivitas operasional.</p>
+            </div>
+          </div>
+
+          {/* SISTEM KERJASAMA */}
+          <div className="kerjasama-grid">
+            <div className="kerjasama-card">
+              <h4>Sistem Kerjasama Autopilot</h4>
+              <ol>
+                <li>Masa kerja sama 5 tahun berdasarkan kontrak kemitraan.</li>
+                <li>Mitra wajib menggunakan & membeli bahan baku dari Doumi Pusat sesuai ketentuan yang berlaku.</li>
+                <li>Selama mitra belum mencapai balik modal, management fee sebesar 10% dari omzet kotor.</li>
+                <li>Setelah mitra mencapai balik modal, management fee menjadi 5% dari omzet kotor.</li>
+                <li>Tim Doumi membantu pengelolaan dan pemantauan operasional outlet sesuai sistem yang disepakati.</li>
+              </ol>
+            </div>
+            <div className="kerjasama-card">
+              <h4>Sistem Kerjasama Reguler</h4>
+              <ol>
+                <li>Masa kerja sama 5 tahun berdasarkan kontrak kemitraan.</li>
+                <li>Mitra wajib menggunakan & membeli bahan baku dari Doumi sesuai ketentuan yang berlaku.</li>
+                <li>Manajemen Doumi memberikan bimbingan dan pendampingan kepada mitra.</li>
+                <li>Mitra bertanggung jawab terhadap pengelolaan operasional outlet sehari-hari.</li>
+                <li>Doumi memberikan dukungan dalam promosi, marketing, pengembangan produk, dan inovasi.</li>
+                <li>Evaluasi dan pendampingan dilakukan untuk membantu menjaga standar dan perkembangan outlet.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div className="partner-cta">
+            <h3>Tertarik jadi mitra Doumi?</h3>
+            <p>Ceritakan kotamu dan paket yang kamu minati, tim Doumi akan bantu proses selanjutnya.</p>
             <a className="btn btn-primary" href={WA} target="_blank" rel="noopener noreferrer">Tanya Kemitraan</a>
           </div>
         </div>
@@ -284,7 +408,6 @@ export default function Home() {
           <div className="section-head">
             <div className="eyebrow-mark"><span className="dot"></span> Outlet & Lokasi</div>
             <h2>Temukan Doumi terdekat</h2>
-            <p>Contoh titik outlet Doumi — sesuaikan dengan lokasi outlet asli sebelum website ini publish.</p>
           </div>
           <div className="outlet-grid">
             <div className="outlet-card">
@@ -294,38 +417,6 @@ export default function Home() {
             <div className="outlet-card">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.4060317608137!2d112.72224272357198!3d-7.308199021848865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb787814409f%3A0xc3be34873078acb!2sJl.%20Ketintang%20No.16%2C%20Wonokromo%2C%20Kec.%20Gayungan%2C%20Surabaya%2C%20Jawa%20Timur%2060231!5e0!3m2!1sid!2sid!4v1790842477946!5m2!1sid!2sid" loading="lazy"></iframe>
               <div className="info"><h3>Doumi Ketintang</h3><p>Jl. Ketintang No.16, Ketintang, Gayungan, Sidoarjo, Jawa Timur</p></div>
-            </div>
-            <div className="outlet-card">
-              <iframe src="https://www.google.com/maps?q=Gresik&output=embed" loading="lazy"></iframe>
-              <div className="info"><h3>Doumi Gresik</h3><p>Jl. Contoh Manis No. 5, Gresik, Jawa Timur</p></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* TESTIMONI */}
-      <section id="testimoni">
-        <div className="wrap">
-          <div className="section-head">
-            <div className="eyebrow-mark"><span className="dot"></span> Testimoni</div>
-            <h2>Kata mereka soal Doumi</h2>
-            <p>Contoh testimoni — ganti dengan ulasan asli pelanggan setelah tersedia.</p>
-          </div>
-          <div className="testi-grid">
-            <div className="testi-card">
-              <div className="stars">★★★★★</div>
-              <p className="quote">Donatnya beneran lembut dan toppingnya banyak banget, jadi langganan tiap minggu.</p>
-              <div className="who">— Rani, Surabaya</div>
-            </div>
-            <div className="testi-card">
-              <div className="stars">★★★★★</div>
-              <p className="quote">Sering pesan buat acara kantor, semua orang suka dan harganya masih masuk budget.</p>
-              <div className="who">— Bayu, Sidoarjo</div>
-            </div>
-            <div className="testi-card">
-              <div className="stars">★★★★★</div>
-              <p className="quote">Baru gabung mitra Doumi bulan lalu, timnya bantu banget dari awal sampai buka outlet.</p>
-              <div className="who">— Sari, Gresik</div>
             </div>
           </div>
         </div>
@@ -348,7 +439,7 @@ export default function Home() {
           <div className="footer-grid">
             <div>
               <a href="#home" className="logo"><img src="/images/logo_doumi.png" alt="Doumi" /></a>
-              <p className="tag">Donat lembut, topping melimpah, harga bersahabat, dibuat fresh setiap hari.</p>
+              <p className="tag">Donat & Milk harga bersahabat, dibuat fresh setiap hari.</p>
             </div>
             <div>
               <h4>Quick Links</h4>
@@ -373,7 +464,7 @@ export default function Home() {
             </div>
             <div>
               <h4>Alamat</h4>
-              <p style={{ fontSize: '0.92rem', color: 'rgba(255,245,247,0.75)' }}>Jl. Contoh Raya No. 10, Surabaya, Jawa Timur, Indonesia</p>
+              <p style={{ fontSize: '0.92rem', color: 'rgba(255,245,247,0.75)' }}>Jl. Karah No 116, Surabaya, Jawa Timur, Indonesia</p>
             </div>
           </div>
           <div className="footer-bottom">
