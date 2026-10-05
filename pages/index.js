@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useState } from 'react';
 
-const WA = "https://wa.me/085122414249";
+const WA = "https://wa.me/6285122414249";
 const IG = "https://www.instagram.com/doumi.official?stkn=MXF2bnhvOWsxanpoZA==";
 const TIKTOK = "https://www.tiktok.com/@doumi.official4?_r=1&_t=ZS-9A9tAESgEbq";
 const FACEBOOK = "https://www.";
@@ -205,22 +205,22 @@ export default function Home() {
           </div>
           <div className="adv-grid">
             <div className="adv-card">
-              <svg className="icon" viewBox="0 0 34 34"><circle cx="17" cy="17" r="15" fill="var(--cocoa)" /><circle cx="17" cy="17" r="6" fill="var(--cream)" /></svg>
+              <svg className="icon" viewBox="0 0 34 34"><circle cx="17" cy="17" r="15" fill="var(--pink)" /><circle cx="17" cy="17" r="6" fill="var(--cream)" /></svg>
               <h3>Produk Familiar</h3>
               <p>Donat merupakan produk yang mudah diterima oleh berbagai kalangan.</p>
             </div>
             <div className="adv-card">
-              <svg className="icon" viewBox="0 0 34 34"><circle cx="17" cy="17" r="15" fill="var(--pink)" /><circle cx="17" cy="17" r="6" fill="var(--cream)" /></svg>
+              <svg className="icon" viewBox="0 0 34 34"><circle cx="17" cy="17" r="15" fill="var(--cocoa-soft)" /><circle cx="17" cy="17" r="6" fill="var(--cream)" /></svg>
               <h3>Fleksibel dalam Penempatan</h3>
               <p>Konsep booth dapat ditempatkan di area dengan potensi traffic yang sesuai.</p>
             </div>
             <div className="adv-card">
-              <svg className="icon" viewBox="0 0 34 34"><circle cx="17" cy="17" r="15" fill="var(--pink)" /><circle cx="17" cy="17" r="6" fill="var(--cream)" /></svg>
+              <svg className="icon" viewBox="0 0 34 34"><circle cx="17" cy="17" r="15" fill="var(--brown)" /><circle cx="17" cy="17" r="6" fill="var(--cream)" /></svg>
               <h3>Modal Dapat Disesuaikan</h3>
               <p>Tersedia beberapa pilihan paket kemitraan sesuai kebutuhan dan skala usaha.</p>
             </div>
             <div className="adv-card">
-              <svg className="icon" viewBox="0 0 34 34"><circle cx="17" cy="17" r="15" fill="var(--butter)" /><circle cx="17" cy="17" r="6" fill="var(--cream)" /></svg>
+              <svg className="icon" viewBox="0 0 34 34"><circle cx="17" cy="17" r="15" fill="var(--cocoa)" /><circle cx="17" cy="17" r="6" fill="var(--cream)" /></svg>
               <h3>Sistem Operasional Terstruktur</h3>
               <p>Mitra mendapatkan panduan terkait operasional dan standar usaha.</p>
             </div>
@@ -247,14 +247,19 @@ export default function Home() {
             <p>Intip berbagai produk, outlet, dan momen seru bersama Doumi yang bikin setiap kunjungan jadi lebih berkesan.</p>
           </div>
           <div className="gallery-grid">
-            <div className="g-item produk big"><span className="g-tag">Foto Produk</span></div>
-            <div className="g-item produk"><span className="g-tag">Foto Produk</span></div>
+            <div className="g-item produk big">
+              <img src="/images/produk.jpeg" alt="Produk Doumi" />
+              <span className="g-tag">Foto Produk</span></div>
+            <div className="g-item produk">
+              <img src="/images/minuman.jpeg" alt="Produk Doumi" />
+              <span className="g-tag">Foto Produk</span></div>
             <div className="g-item outlet">
               <img src="/images/Outlet.png" alt="Container outlet Doumi" />
               <span className="g-tag">Container / Outlet</span>
             </div>
-            <div className="g-item customer"><span className="g-tag">Customer Moment</span></div>
-            <div className="g-item customer"><span className="g-tag">Customer Moment</span></div>
+            <div className="g-item customer">
+              <img src="/images/customer.jpeg" alt="Costomer Doumi" />
+            <span className="g-tag">Customer Moment</span></div>
           </div>
         </div>
       </section>
