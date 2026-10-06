@@ -37,7 +37,7 @@ export default function Home() {
             <a href="#keunggulan" onClick={closeNav}>Keunggulan</a>
             <a href="#gallery" onClick={closeNav}>Galeri</a>
             <a href="#kemitraan" onClick={closeNav}>Kemitraan</a>
-            <a href="#contact" onClick={closeNav}>Contact</a>
+            <a href="#outlet" onClick={closeNav}>Lokasi</a>
           </nav>
           <div className="nav-cta" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
             <a className="btn btn-primary" href={WA} target="_blank" rel="noopener noreferrer">
@@ -80,11 +80,11 @@ export default function Home() {
           <div className="about-copy">
             <div className="eyebrow-mark"><span className="dot"></span> Tentang Kami</div>
             <h2 style={{ color: 'var(--cream)', fontSize: 'clamp(1.9rem,3.2vw,2.6rem)', marginBottom: 20 }}>Cerita di balik Doumi</h2>
-            <p>Doumi (Donut & Milk) adalah brand kuliner yang menghadirkan perpaduan donat dan minuman berbasis susu dalam satu konsep yang praktis, modern, dan mudah dinikmati. Doumi menghadirkan beragam pilihan donat dan minuman sehingga pelanggan dapat menikmati perpaduan camilan manis dan minuman dalam satu pilihan. Produk Doumi dirancang untuk menemani berbagai momen, mulai dari camilan sehari-hari hingga waktu berkumpul bersama keluarga, teman, maupun rekan. 
-              Dengan mengutamakan produk yang menarik, cita rasa yang konsisten, serta konsep brand yang mudah dikenali, Doumi hadir untuk memberikan pengalaman menikmati donat dan milk yang menyenangkan sekaligus membuka peluang usaha bagi para mitra.</p>
+            <p>Doumi (Donut & Milk) adalah brand kuliner yang menghadirkan perpaduan donat dan minuman berbasis susu dalam konsep yang modern, praktis, dan menarik. 
+              Dengan produk yang beragam dan konsep brand yang mudah dikenali, Doumi hadir sebagai pilihan camilan sekaligus peluang usaha yang dapat dikembangkan bersama mitra.</p>
+              <p className="visi">Visi : Menjadi brand Donut & Milk pilihan masyarakat yang terus berkembang dan tumbuh bersama mitra.</p>
           </div>
           <div className="point-list">
-            <p className="visi">Visi kami: Menjadi brand Donut & Milk pilihan masyarakat yang terus berkembang dan tumbuh bersama mitra.</p>
             <div className="point"><h2>Misi :</h2></div>
             <div className="point"><div className="num">1</div><div><h3>Menghadirkan produk berkualitas dengan cita rasa yang konsisten.</h3></div></div>
             <div className="point"><div className="num">2</div><div><h3>Mengembangkan produk yang inovatif dan menarik.</h3></div></div>
@@ -283,7 +283,6 @@ export default function Home() {
                 <thead><tr><th>Pilihan Outlet</th><th>Investasi</th></tr></thead>
                 <tbody>
                   <tr><td>Container</td><td>Rp 69.000.000</td></tr>
-                  <tr><td>Building</td><td>Rp 89.000.000</td></tr>
                 </tbody>
               </table>
               <p className="package-sub">Mitra mendapatkan:</p>
@@ -308,7 +307,6 @@ export default function Home() {
                 <thead><tr><th>Pilihan Outlet</th><th>Investasi</th></tr></thead>
                 <tbody>
                   <tr><td>Container</td><td>Rp 69.000.000</td></tr>
-                  <tr><td>Building</td><td>Rp 89.000.000</td></tr>
                 </tbody>
               </table>
               <p className="package-sub">Mitra mendapatkan:</p>
@@ -337,7 +335,6 @@ export default function Home() {
                 <thead><tr><th>Pilihan Outlet</th><th>Investasi</th></tr></thead>
                 <tbody>
                   <tr><td>Container</td><td>Rp 79.000.000</td></tr>
-                  <tr><td>Building</td><td>Rp 99.000.000</td></tr>
                 </tbody>
               </table>
               <p className="package-sub">Mitra mendapatkan:</p>
@@ -358,7 +355,7 @@ export default function Home() {
 
           {/* PILIHAN OUTLET */}
           <div className="outlet-type-head">
-            <h3>Pilihan Outlet Doumi</h3>
+            <h3>Outlet Doumi</h3>
             <p>Setiap mitra bebas memilih konsep outlet Doumi sesuai kebutuhan, karakteristik lokasi, dan skala usaha yang diinginkan.</p>
           </div>
           <div className="outlet-type-grid">
@@ -366,11 +363,6 @@ export default function Home() {
               <span className="otn">1</span>
               <h4>Container</h4>
               <p>Konsep outlet dengan tampilan modern dan ruang operasional lebih luas, cocok untuk lokasi yang membutuhkan area usaha lebih besar.</p>
-            </div>
-            <div className="outlet-type-card">
-              <span className="otn">2</span>
-              <h4>Building</h4>
-              <p>Konsep outlet berupa bangunan kecil dengan ruang lebih lengkap dan permanen untuk mendukung aktivitas operasional.</p>
             </div>
           </div>
 
@@ -417,7 +409,7 @@ export default function Home() {
           <div className="outlet-grid">
             <div className="outlet-card">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.536720523086!2d112.716964726544!3d-7.30830547461492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb7f8b02a0cd%3A0x1e03a560196c1667!2sJl.%20Karah%20No.116%2C%20Karah%2C%20Kec.%20Jambangan%2C%20Surabaya%2C%20Jawa%20Timur%2060232!5e0!3m2!1sid!2sid!4v1790842135924!5m2!1sid!2sidc" loading="lazy" allowFullScreen referrerPolicy="no-referrer-when-downgrade" title="Peta Outlet Doumi"></iframe>
-              <div className="info"><h3>Doumi Surabaya Selatan</h3><p>Jl. Karah No.116, Surabaya, Jawa Timur</p></div>
+              <div className="info"><h3>Doumi Karah</h3><p>Jl. Karah No.116, Surabaya, Jawa Timur</p></div>
             </div>
             <div className="outlet-card">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.4060317608137!2d112.72224272357198!3d-7.308199021848865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb787814409f%3A0xc3be34873078acb!2sJl.%20Ketintang%20No.16%2C%20Wonokromo%2C%20Kec.%20Gayungan%2C%20Surabaya%2C%20Jawa%20Timur%2060231!5e0!3m2!1sid!2sid!4v1790842477946!5m2!1sid!2sid" loading="lazy"></iframe>
